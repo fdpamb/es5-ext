@@ -1,3 +1,4 @@
+/* eslint-disable no-object-constructor */
 "use strict";
 
 var getPrototypeOf = Object.getPrototypeOf

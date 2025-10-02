@@ -8,5 +8,6 @@ module.exports = function (t, a) {
 	a(t(new String("raz")), false, "String object");
 	a(t({}), false, "Plain object");
 	a(t(/a/), true, "Regular expression");
+	// eslint-disable-next-line
 	a(t(new RegExp("a")), true, "Regular expression via constructor");
 };

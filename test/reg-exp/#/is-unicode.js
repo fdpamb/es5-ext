@@ -5,7 +5,7 @@ module.exports = function (t, a) {
 	a(t.call(/raz/), false, "Normal");
 	a(t.call(/raz/g), false, "Global");
 	try {
-		// eslint-disable-next-line no-invalid-regexp
+		// eslint-disable-next-line
 		re = new RegExp("raz", "u");
 	} catch (ignore) {}
 	if (!re) return;

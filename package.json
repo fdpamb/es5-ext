@@ -30,14 +30,14 @@
 	},
 	"devDependencies": {
 		"eslint": "^8.57.0",
-		"eslint-config-medikoo": "^4.2.0",
+		"eslint-config-medikoo": "^5.2.0",
 		"git-list-updated": "^1.2.1",
 		"github-release-from-cc-changelog": "^2.3.0",
 		"husky": "^4.3.8",
-		"lint-staged": "~13.2.3",
-		"nyc": "^15.1.0",
+		"lint-staged": "~13.3.0",
+		"nyc": "^17.1.0",
 		"plain-promise": "^0.1.1",
-		"prettier-elastic": "^2.8.8",
+		"prettier-elastic": "^3.2.5",
 		"tad": "^3.1.1"
 	},
 	"husky": {
