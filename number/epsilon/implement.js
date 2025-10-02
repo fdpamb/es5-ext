@@ -5,6 +5,6 @@ if (!require("./is-implemented")()) {
 		value: require("./"),
 		configurable: false,
 		enumerable: false,
-		writable: false
+		writable: false,
 	});
 }

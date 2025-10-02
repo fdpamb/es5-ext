@@ -5,7 +5,7 @@
 module.exports = function (t, a) {
 	a.deep(t.call(function (a, b) { return this[a] + this[b]; }), {
 		args: "a, b",
-		body: " return this[a] + this[b]; "
+		body: " return this[a] + this[b]; ",
 	});
 	a.deep(t.call(function () {}), { args: "", body: "" });
 	// eslint-disable-next-line no-unused-vars
@@ -26,6 +26,6 @@ module.exports = function (t, a) {
 	a.deep(t.call(eval("foo=>bar")), { args: "foo", body: "bar" });
 	a.deep(t.call(eval("(foo = { marko: (elo) => { someFunct(); } }) => { body(); }")), {
 		args: "foo = { marko: (elo) => { someFunct(); } }",
-		body: " body(); "
+		body: " body(); ",
 	});
 };

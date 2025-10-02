@@ -5,6 +5,6 @@ if (!require("./is-implemented")()) {
 		value: require("./shim"),
 		configurable: true,
 		enumerable: false,
-		writable: true
+		writable: true,
 	});
 }

@@ -11,5 +11,5 @@ module.exports = {
 		a.not((z = t.call(x)), x, "Returns different object");
 		a.deep(x, y, "Origin not changed");
 		a.deep(z, [0, 1, "", o, false, true], "Result");
-	}
+	},
 };

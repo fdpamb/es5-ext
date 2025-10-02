@@ -6,6 +6,6 @@ if (!require("./is-implemented")()) {
 	Object.defineProperty(RegExp.prototype, "sticky", {
 		configurable: true,
 		enumerable: false,
-		get: isSticky
+		get: isSticky,
 	});
 }

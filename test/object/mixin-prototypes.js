@@ -59,7 +59,7 @@ module.exports = function (t, a) {
 		configurable: false,
 		writable: true,
 		enumerable: false,
-		value: "bar"
+		value: "bar",
 	});
 
 	try { t(x, { foo: "lorem" }); }

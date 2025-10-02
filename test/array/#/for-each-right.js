@@ -35,5 +35,5 @@ module.exports = {
 		});
 		a(y, 6, "Misssing Indexes");
 		a(count, 3, "Misssing Indexes, count");
-	}
+	},
 };

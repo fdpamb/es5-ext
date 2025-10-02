@@ -14,9 +14,9 @@ module.exports = function (t, a) {
 			dwa: "dwa",
 			trzy: { cztery: "pięć", sześć: "siedem" },
 			osiem: {},
-			dziewięć: function () {}
+			dziewięć: function () {},
 		},
-		dziesięć: 10
+		dziesięć: 10,
 	};
 	o.raz.rec = o;
 

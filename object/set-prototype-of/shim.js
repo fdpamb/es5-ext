@@ -50,7 +50,7 @@ module.exports = (function (status) {
 		configurable: false,
 		enumerable: false,
 		writable: false,
-		value: status.level
+		value: status.level,
 	});
 })(
 	(function () {

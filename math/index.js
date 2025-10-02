@@ -20,5 +20,5 @@ module.exports = {
 	sign: require("./sign"),
 	sinh: require("./sinh"),
 	tanh: require("./tanh"),
-	trunc: require("./trunc")
+	trunc: require("./trunc"),
 };

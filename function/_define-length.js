@@ -11,7 +11,7 @@ try {
 		configurable: true,
 		writable: false,
 		enumerable: false,
-		value: 1
+		value: 1,
 	});
 }
 catch (ignore) {}

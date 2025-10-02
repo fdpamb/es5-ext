@@ -5,7 +5,7 @@ module.exports = function (t, a) {
 	a.deep(
 		t("raz"),
 		[
-			["0", "r"], ["1", "a"], ["2", "z"]
+			["0", "r"], ["1", "a"], ["2", "z"],
 		],
 		"Primitive"
 	);

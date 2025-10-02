@@ -14,10 +14,10 @@ module.exports = function (t, a) {
 			dwa: "dwa",
 			trzy: { cztery: "pięć", sześć: "siedem" },
 			osiem: {},
-			dziewięć: function () {}
+			dziewięć: function () {},
 		},
 		dziesięć: 10,
-		jedenaście: ["raz", ["dwa", "trzy", { elo: "true" }]]
+		jedenaście: ["raz", ["dwa", "trzy", { elo: "true" }]],
 	};
 	o.raz.rec = o;
 

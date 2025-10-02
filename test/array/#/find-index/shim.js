@@ -4,16 +4,13 @@ exports.__generic = function (t, a) {
 	var count = 0, o = {}, self = Object(this);
 	a(
 		t.call(
-			self,
-			function (value, i, scope) {
+			self, function (value, i, scope) {
 				a(value, this[i], "Value");
 				a(i, count++, "Index");
 				a(scope, this, "Scope");
-			},
-			self
+			}, self
 		),
-		-1,
-		"Falsy result"
+		-1, "Falsy result"
 	);
 	a(count, 3);
 

@@ -11,5 +11,5 @@ module.exports = {
 		a.deep(t.call([x, y]), [x, y], "No arguments");
 		a.deep(t.call([x, 1], [], []), [x, 1], "Empty arguments");
 		a.deep(t.call([1, "raz", x], [2, "raz", y], [2, "raz", x]), [1, y]);
-	}
+	},
 };

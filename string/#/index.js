@@ -19,5 +19,5 @@ module.exports = {
 	"plainReplaceAll": require("./plain-replace-all"),
 	"repeat": require("./repeat"),
 	"startsWith": require("./starts-with"),
-	"uncapitalize": require("./uncapitalize")
+	"uncapitalize": require("./uncapitalize"),
 };

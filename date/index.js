@@ -5,5 +5,5 @@ module.exports = {
 	"ensureTimeValue": require("./ensure-time-value"),
 	"isDate": require("./is-date"),
 	"isTimeValue": require("./is-time-value"),
-	"validDate": require("./valid-date")
+	"validDate": require("./valid-date"),
 };

@@ -34,8 +34,7 @@ module.exports = {
 				++count;
 				y += i;
 			}),
-			false,
-			"Return"
+			false, "Return"
 		);
 		a(y, 6, "Misssing Indexes");
 		a(count, 3, "Misssing Indexes, count");
@@ -46,9 +45,8 @@ module.exports = {
 				++count;
 				return item > 0;
 			}),
-			true,
-			"Return"
+			true, "Return"
 		);
 		a(count, 2, "Break after true is returned");
-	}
+	},
 };

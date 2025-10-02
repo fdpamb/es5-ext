@@ -20,6 +20,6 @@ module.exports = function (t, a) {
 					d();
 				}
 			);
-		}
+		},
 	};
 };

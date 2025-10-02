@@ -119,19 +119,19 @@ Object.defineProperty(Function.prototype, "partial", {
   value: require("es5-ext/function/#/partial"),
   configurable: true,
   enumerable: false,
-  writable: true
+  writable: true,
 });
 Object.defineProperty(Array.prototype, "flatten", {
   value: require("es5-ext/array/#/flatten"),
   configurable: true,
   enumerable: false,
-  writable: true
+  writable: true,
 });
 Object.defineProperty(String.prototype, "capitalize", {
   value: require("es5-ext/string/#/capitalize"),
   configurable: true,
   enumerable: false,
-  writable: true
+  writable: true,
 });
 ```
 

@@ -41,6 +41,6 @@ module.exports = function (t) {
 				a(error.message, "Stop");
 				setTimeout(d, 0); // Escape error swallowing
 			});
-		}
+		},
 	};
 };

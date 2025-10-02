@@ -4,5 +4,5 @@ module.exports = {
 	"#": require("./#"),
 	"escape": require("./escape"),
 	"isRegExp": require("./is-reg-exp"),
-	"validRegExp": require("./valid-reg-exp")
+	"validRegExp": require("./valid-reg-exp"),
 };

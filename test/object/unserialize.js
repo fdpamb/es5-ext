@@ -32,7 +32,7 @@ module.exports = function (t, a) {
 			szesc: /raz/g,
 			siedem: new Date(1234567),
 			osiem: ["foo", 32],
-			dziewiec: { foo: "bar", dwa: 343 }
+			dziewiec: { foo: "bar", dwa: 343 },
 		},
 		"Rich object"
 	);

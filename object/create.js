@@ -22,7 +22,7 @@ module.exports = (function () {
 				configurable: true,
 				enumerable: false,
 				writable: true,
-				value: undefined
+				value: undefined,
 			};
 			return;
 		}
@@ -34,7 +34,7 @@ module.exports = (function () {
 		configurable: false,
 		enumerable: false,
 		writable: false,
-		value: nullObject
+		value: nullObject,
 	});
 
 	return function (prototype, props) {

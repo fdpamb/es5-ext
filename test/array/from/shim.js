@@ -49,16 +49,14 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t.call(function () { return Object.freeze({}); }, {});
-		},
-		TypeError,
-		"Contructor producing freezed objects"
+		}, TypeError, "Contructor producing freezed objects"
 	);
 
 	// Ensure no setters are called for the indexes
 	// Ensure no setters are called for the indexes
 	MyType = function () {};
 	Object.defineProperty(MyType.prototype, "0", {
-		set: function (x) { throw new Error("Setter called: " + x); }
+		set: function (x) { throw new Error("Setter called: " + x); },
 	});
 	a.deep(t.call(MyType, { 0: "abc", length: 1 }), { 0: "abc", length: 1 }, "Defined not set");
 };

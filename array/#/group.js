@@ -8,7 +8,7 @@ var callable = require("../../object/valid-callable")
   , forEach  = Array.prototype.forEach
   , apply    = Function.prototype.apply;
 
-module.exports = function (cb /*, thisArg*/) {
+module.exports = function (cb/*, thisArg*/) {
 	var result;
 
 	value(this);
@@ -16,13 +16,11 @@ module.exports = function (cb /*, thisArg*/) {
 
 	result = Object.create(null);
 	forEach.call(
-		this,
-		function (item) {
+		this, function (item) {
 			var key = apply.call(cb, this, arguments);
 			if (!result[key]) result[key] = [];
 			result[key].push(item);
-		},
-		arguments[1]
+		}, arguments[1]
 	);
 	return result;
 };

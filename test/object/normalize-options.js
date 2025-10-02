@@ -12,7 +12,7 @@ module.exports = function (t, a) {
 	defineProperty(x, "get", {
 		configurable: true,
 		enumerable: true,
-		get: function () { return this.dwa; }
+		get: function () { return this.dwa; },
 	});
 	x = create(x);
 	x.trzy = "three";
@@ -32,7 +32,7 @@ module.exports = function (t, a) {
 			cztery: "four",
 			piec: "five",
 			szesc: "six",
-			get: "two!"
+			get: "two!",
 		},
 		"Deep object"
 	);
@@ -48,7 +48,7 @@ module.exports = function (t, a) {
 			piec: "five",
 			szesc: "elo",
 			siedem: "bibg",
-			get: "two!"
+			get: "two!",
 		},
 		"Multiple options"
 	);

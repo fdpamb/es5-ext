@@ -6,5 +6,5 @@ module.exports = {
 	floorDay: require("./floor-day"),
 	floorMonth: require("./floor-month"),
 	floorYear: require("./floor-year"),
-	format: require("./format")
+	format: require("./format"),
 };

@@ -13,5 +13,5 @@ module.exports = {
 	"MIN_SAFE_INTEGER": require("./min-safe-integer"),
 	"toInteger": require("./to-integer"),
 	"toPosInteger": require("./to-pos-integer"),
-	"toUint32": require("./to-uint32")
+	"toUint32": require("./to-uint32"),
 };

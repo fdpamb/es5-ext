@@ -37,5 +37,5 @@ module.exports = {
 	"someRight": require("./some-right"),
 	"splice": require("./splice"),
 	"uniq": require("./uniq"),
-	"values": require("./values")
+	"values": require("./values"),
 };

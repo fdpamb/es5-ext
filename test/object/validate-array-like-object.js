@@ -9,9 +9,7 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t(function () {});
-		},
-		TypeError,
-		"Function"
+		}, TypeError, "Function"
 	);
 	a(t((x = new String("raz"))), x, "String object"); // Jslint: ignore
 

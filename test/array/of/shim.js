@@ -67,15 +67,13 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t.call(function () { return Object.freeze({}); });
-		},
-		TypeError,
-		"Frozen instance"
+		}, TypeError, "Frozen instance"
 	);
 
 	// Ensure no setters are called for the indexes
 	MyType = function () {};
 	defineProperty(MyType.prototype, "0", {
-		set: function (x) { throw new Error("Setter called: " + x); }
+		set: function (x) { throw new Error("Setter called: " + x); },
 	});
 	a.deep(t.call(MyType, "abc"), { 0: "abc", length: 1 }, "Define, not set");
 };

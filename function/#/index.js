@@ -9,5 +9,5 @@ module.exports = {
 	not: require("./not"),
 	partial: require("./partial"),
 	spread: require("./spread"),
-	toStringTokens: require("./to-string-tokens")
+	toStringTokens: require("./to-string-tokens"),
 };

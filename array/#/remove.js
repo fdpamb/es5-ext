@@ -5,13 +5,11 @@ var indexOf = require("./e-index-of")
   , splice  = Array.prototype.splice;
 
 // eslint-disable-next-line no-unused-vars
-module.exports = function (itemToRemove /*, …item*/) {
+module.exports = function (itemToRemove/*, …item*/) {
 	forEach.call(
-		arguments,
-		function (item) {
+		arguments, function (item) {
 			var index = indexOf.call(this, item);
 			if (index !== -1) splice.call(this, index, 1);
-		},
-		this
+		}, this
 	);
 };

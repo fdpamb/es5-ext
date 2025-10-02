@@ -3,6 +3,7 @@
 module.exports = function (t, a) {
 	var r = /raz/;
 	a(t(r), r, "Direct");
+	// eslint-disable-next-line
 	r = new RegExp("foo");
 	a(t(r), r, "Constructor");
 	a.throws(function () { t({}); }, "Object");

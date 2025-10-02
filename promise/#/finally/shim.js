@@ -16,8 +16,7 @@ module.exports = function (callback) {
 	return this.then(
 		function (result) {
 			return resolveCallback(callback, function () { return result; });
-		},
-		function (error) {
+		}, function (error) {
 			return resolveCallback(callback, function () { throw error; });
 		}
 	);

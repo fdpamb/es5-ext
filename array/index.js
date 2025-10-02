@@ -7,5 +7,5 @@ module.exports = {
 	"isPlainArray": require("./is-plain-array"),
 	"of": require("./of"),
 	"toArray": require("./to-array"),
-	"validArray": require("./valid-array")
+	"validArray": require("./valid-array"),
 };

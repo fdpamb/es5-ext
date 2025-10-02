@@ -10,9 +10,7 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t(function () {});
-		},
-		TypeError,
-		"Function"
+		}, TypeError, "Function"
 	);
 	a.throws(function () { t({}); }, TypeError, "Object");
 	a.throws(function () { t({ length: 0 }); }, TypeError, "Array-like");

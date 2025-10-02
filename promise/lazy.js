@@ -30,6 +30,6 @@ module.exports = function (executor) {
 	return Object.defineProperty(promise, "then", {
 		configurable: true,
 		writable: true,
-		value: lazyThen
+		value: lazyThen,
 	});
 };

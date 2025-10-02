@@ -18,7 +18,7 @@ module.exports = (function () {
 	try {
 		Object.defineProperty(Object.prototype, "__global__", {
 			get: function () { return this; },
-			configurable: true
+			configurable: true,
 		});
 	} catch (error) {
 		// Unfortunate case of updates to Object.prototype being restricted

@@ -14,8 +14,7 @@ curry = function self(fn, length, preArgs) {
 				? preArgs.concat(slice.call(arguments, 0, length - preArgs.length))
 				: slice.call(arguments, 0, length);
 			return args.length === length ? apply.call(fn, this, args) : self(fn, length, args);
-		},
-		preArgs ? length - preArgs.length : length
+		}, preArgs ? length - preArgs.length : length
 	);
 };
 

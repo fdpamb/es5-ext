@@ -18,7 +18,8 @@ module.exports = function (target, source) {
 
 	var error;
 	sources.forEach(function (sourceProto) {
-		try { mixin(target, sourceProto); } catch (mixinError) { error = mixinError; }
+		try { mixin(target, sourceProto); }
+		catch (mixinError) { error = mixinError; }
 	});
 	if (error) throw error;
 	return target;

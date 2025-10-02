@@ -7,14 +7,12 @@ module.exports = {
 		self = Object(this);
 		a.deep(
 			t.call(
-				self,
-				function (v, i, scope) {
+				self, function (v, i, scope) {
 					a(v, this[i], "Value");
 					a(i, count++, "Index");
 					a(scope, this, "Scope");
 					return i;
-				},
-				self
+				}, self
 			),
 			{ 0: [this[0]], 1: [this[1]], 2: [this[2]] }
 		);
@@ -26,5 +24,5 @@ module.exports = {
 		});
 		a.deep(r.odd, [3, 3, 5, 7, 7, 23, 45]);
 		a.deep(r.even, [2, 4, 6, 34, 56]);
-	}
+	},
 };

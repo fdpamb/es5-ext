@@ -8,5 +8,5 @@ module.exports = {
 
 		a.not((w = t.call(o)), o, "Returns different object");
 		a.deep(w, [1, 2, x, 3, "raz", "1", y, "trzy", z], "Result");
-	}
+	},
 };

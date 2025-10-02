@@ -18,5 +18,5 @@ module.exports = {
 	object: require("./object"),
 	promise: require("./promise"),
 	regExp: require("./reg-exp"),
-	string: require("./string")
+	string: require("./string"),
 };

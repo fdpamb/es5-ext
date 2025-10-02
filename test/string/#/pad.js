@@ -20,5 +20,5 @@ module.exports = {
 
 		a(t.call("yyyyy"), "yyyyy", "Equal length");
 		a(t.call("yyyyyyy"), "yyyyyyy", "Longer");
-	}
+	},
 };

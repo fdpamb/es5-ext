@@ -5,14 +5,12 @@ module.exports = function (t, a) {
 
 	t = t("forEach");
 	t(
-		o,
-		function (value, name, self, index) {
+		o, function (value, name, self, index) {
 			o2[name] = value;
 			a(index, ++i, "Index");
 			a(self, o, "Self");
 			a(this, o3, "Scope");
-		},
-		o3
+		}, o3
 	);
 	a.deep(o2, o);
 

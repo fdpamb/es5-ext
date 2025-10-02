@@ -9,8 +9,6 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t(function () {});
-		},
-		TypeError,
-		"Error"
+		}, TypeError, "Error"
 	);
 };

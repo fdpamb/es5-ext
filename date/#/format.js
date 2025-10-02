@@ -14,7 +14,7 @@ format = require("../../string/format-method")({
 	H: function () { return pad.call(this.getHours(), 2); },
 	M: function () { return pad.call(this.getMinutes(), 2); },
 	S: function () { return pad.call(this.getSeconds(), 2); },
-	L: function () { return pad.call(this.getMilliseconds(), 3); }
+	L: function () { return pad.call(this.getMilliseconds(), 3); },
 });
 
 module.exports = function (pattern) { return format.call(date(this), pattern); };

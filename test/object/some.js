@@ -15,8 +15,7 @@ module.exports = function (t, a) {
 			++i;
 			return true;
 		}),
-		true,
-		"Succeeds"
+		true, "Succeeds"
 	);
 	a(i, 1, "Stops iteration after condition is met");
 

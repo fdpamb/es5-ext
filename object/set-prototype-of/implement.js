@@ -7,6 +7,6 @@ if (!require("./is-implemented")() && (shim = require("./shim"))) {
 		value: shim,
 		configurable: true,
 		enumerable: false,
-		writable: true
+		writable: true,
 	});
 }

@@ -7,5 +7,5 @@ module.exports = {
 	"isString": require("./is-string"),
 	"random": require("./random"),
 	"randomUniq": require("./random-uniq"),
-	"raw": require("./raw")
+	"raw": require("./raw"),
 };

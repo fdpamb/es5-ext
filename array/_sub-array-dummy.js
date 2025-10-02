@@ -9,7 +9,7 @@ module.exports = (function () {
 	SubArray = function () { Array.apply(this, arguments); };
 	setPrototypeOf(SubArray, Array);
 	SubArray.prototype = Object.create(Array.prototype, {
-		constructor: { value: SubArray, enumerable: false, writable: true, configurable: true }
+		constructor: { value: SubArray, enumerable: false, writable: true, configurable: true },
 	});
 	return SubArray;
 })();

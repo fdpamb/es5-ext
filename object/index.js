@@ -66,5 +66,5 @@ module.exports = {
 	validObject: require("./valid-object"),
 	validateStringifiable: require("./validate-stringifiable"),
 	validateStringifiableValue: require("./validate-stringifiable-value"),
-	validValue: require("./valid-value")
+	validValue: require("./valid-value"),
 };

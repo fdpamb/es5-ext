@@ -11,9 +11,7 @@ module.exports = function (t, a) {
 	a.throws(
 		function () {
 			t(function () {});
-		},
-		TypeError,
-		"Function"
+		}, TypeError, "Function"
 	);
 	a.throws(function () { t({}); }, TypeError, "Plain object");
 	a.throws(function () { t(/raz/); }, TypeError, "Regexp");
