@@ -71,12 +71,6 @@
 				"rules": {
 					"strict": "off"
 				}
-			},
-			{
-				"files": "_postinstall.js",
-				"env": {
-					"node": true
-				}
 			}
 		]
 	},
@@ -113,7 +107,6 @@
 		"coverage": "nyc npm test",
 		"lint": "eslint --ignore-path=.gitignore .",
 		"lint:updated": "pipe-git-updated --base=main --ext=js -- eslint --ignore-pattern '!*'",
-		"postinstall": " node -e \"try{require('./_postinstall')}catch(e){}\" || exit 0",
 		"prettier-check": "prettier -c --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
 		"prettier-check:updated": "pipe-git-updated --base=main --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
 		"prettify": "prettier --write --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
@@ -123,5 +116,112 @@
 	"engines": {
 		"node": ">=0.10"
 	},
-	"license": "ISC"
+	"license": "ISC",
+	"overrides": {
+		"es6-iterator": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"sprintf-kit": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"d": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"cli-progress-footer": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"es6-set": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"stream-promise": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"plain-promise": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"es6-weak-map": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"tad": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64",
+			"cli-color": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			}
+		},
+		"cli-color": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"memoizee": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"deferred": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"log": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"2-thenable": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"duration": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"event-emitter": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"git-list-updated": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"child-process-ext": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"esniff": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"next": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64",
+			"es6-iterator": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			},
+			"d": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			},
+			"es6-symbol": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			},
+			"es6-weak-map": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			},
+			"memoizee": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			}
+		},
+		"es6-symbol": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"find-requires": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64",
+			"esniff": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			}
+		},
+		"timers-ext": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"lru-queue": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"ncjsm": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64",
+			"fs2": {
+				"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+			}
+		},
+		"fs2": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"es5-ext": {
+			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		}
+	}
 }
