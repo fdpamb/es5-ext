@@ -35,6 +35,7 @@
 		"github-release-from-cc-changelog": "^2.3.0",
 		"husky": "^4.3.8",
 		"lint-staged": "~13.3.0",
+		"minimist": "^1.2.8",
 		"nyc": "^17.1.0",
 		"plain-promise": "^0.1.1",
 		"prettier-elastic": "^3.2.5",
@@ -222,6 +223,9 @@
 		},
 		"es5-ext": {
 			"es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+		},
+		"optimist": {
+			"minimist": "^1.2.8"
 		}
 	}
 }
